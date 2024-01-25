@@ -1,5 +1,6 @@
-# NYWWS_data
-New York State Wastewater Surveillance Data
+# New York State Wastewater Surveillance Data
+> [!NOTE]
+> All sewersheds serving a population of less than 3,000 people have been omitted for privacy. If this information is desired for official use, please submit a [request](https://nywastewatcher.io/contact-us) to be reviewed.
 
 ## File overview
 
