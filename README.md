@@ -5,6 +5,8 @@ New York State Wastewater Surveillance Data
 
 ### nys-wws-sewersheds.csv
 
+This file contains metadata of all municipal sewersheds within NYS. Information in this dataset includes the location of the sewershed, naming conventions for sewershed identifiers, characteristics of the WWTPs, and estimated population statistics.
+
 | Variable name | Description |
 | --- | --- |
 | county | County the sewershed resides in |
@@ -29,6 +31,8 @@ New York State Wastewater Surveillance Data
 
 ### sars2-concentration.csv
 
+This file contains the measurements of raw abundance from wastewater samples, as well as sample metadata, including collection method and extraction method. Within the dataset, each row consists of the results from a single sampling event and necessary information to perform spatial and/or temporal analyses.
+
 | Variable name | Description |
 | --- | --- |
 | sample_collect_date | Date the sample was collected |
@@ -52,6 +56,9 @@ New York State Wastewater Surveillance Data
 | withheld | NA |
 
 ### sars2-genetic-sequencing.csv
+
+The relative abundance of variants detected by the Freyja algorithm in each sample is uploaded to a data file. Each line contains information about where the sample was collected and the collection date. The sample ID field can be cross referenced to other data files for sewershed and sample metadata.
+
 | Variable name | Description |
 | --- | --- |
 | sample_id | Unique ID comprised of date and sewershed of collection |
