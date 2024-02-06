@@ -1,0 +1,34 @@
+variant,label,source,status,in_nowcast,date_of_designation
+XBB.1.5,VOI,WHO,Current,TRUE,2023-01-11
+XBB.1.16,VOI,WHO,Current,TRUE,2023-04-17
+EG.5,VOI,WHO,Current,TRUE,2023-08-09
+BA.2.86,VOI,WHO,Current,TRUE,2023-11-21
+JN.1,VOI,WHO,Current,TRUE,2023-12-18
+XBB,VUM,WHO,Current,TRUE,2022-10-12
+XBB.1.9.1,VUM,WHO,Current,TRUE,2023-03-30
+XBB.2.3,VUM,WHO,Current,TRUE,2023-05-17
+HV.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+JG.3,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+JD.1.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+HK.3,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+GE.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+BA.2,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+EG.5.1.8,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+JF.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+FL.1.5.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.16.6,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.16.11,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.5.70,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+GK.1.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.16.15,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+HF.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+GK.2,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+CH.1.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+EG.6.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.16.1,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.42.2,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.9.2,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.5.68,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.16.17,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+XBB.1.5.72,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
+Other,VOC,Nowcast,In CDC Nowcast but not WHO,TRUE,NA
