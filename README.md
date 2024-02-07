@@ -1,12 +1,26 @@
 # New York State Wastewater Surveillance Data
-> [!NOTE]
-> All sewersheds serving a population of less than 3,000 people have been omitted for privacy. If this information is desired for official use, please submit a [request](https://nywastewatcher.io/contact-us) to be reviewed.
+
+Table of Contents as of 03/24/23.
+This is all a work in progress and subject to change!
+
+~/
+  1) genetic-sequencing.csv: freyja generated variants and their concentration within sequenced samples
+  2) nys-wws-sars2-concentration.csv: quantification of sars2 (and also crassphage), as well as some other per-sample data. ***Please only use this file for analysis, not for reporting (i.e., memos). It is a work in progress***
+
+~/archived_data/
+   1) 20230314_genetic-sequencing.csv: Previous version of sequencing data. Eventually we will likely remove this file from the git, but keeping it here for now
+  
+~/metadata/
+  1) lineage-map.csv: mapping over-detailed lineage names to thier more "summary" names. Also will soon include color...
+  2) sewershed-metadata.csv: information about the sewersheds. Sewershed ids will correspond to sample_ids in sequencing or concentration files
+  3) variants-of-concern.csv: this tells us which variants to focus on in some of our reports that we generate
+  
+~/scripts/
+  Nothing here as of now
 
 ## File overview
 
 ### nys-wws-sewersheds.csv
-
-This file contains metadata of all municipal sewersheds within NYS. Information in this dataset includes the location of the sewershed, naming conventions for sewershed identifiers, characteristics of the WWTPs, and estimated population statistics.
 
 | Variable name | Description |
 | --- | --- |
@@ -18,10 +32,10 @@ This file contains metadata of all municipal sewersheds within NYS. Information 
 | sw_id | Unique ID used to identify the facility |
 | epaid | ID consisting of the state abbreviation and SPDES permit number |
 | cdc_id | ID consisting of the state abbreviation, county FIPS code, SPDES permit number, and a reference letter for either the wastewater treatment plant (A) or upstream locations (B, C, D, etc.) |
-| site_id | ID consisting of the state abbreviation, county FIPS code, SPDES permit number, and a reference letter for either the wastewater treatment plant (A) or upstream locations (B, C, D, etc.) |
-| sample_location | Location within the sewershed that the sample is taken (at the wastewater treatment plant or upstream) |
-| sample_location_specify | Alternate shorthand name for the facility |
-| method | Location within the sewershed that the sample is taken (influent to the wastewater treatment plant, an upstream pump station close to the treatment plant, or an upstream location outside of the treatment plant’s vicinity) |
+| site_id | *See "cdc_id"* |
+| sample_location | Location within the sewershed where the sample is taken (*i.e.*, wwtp or upstream) |
+| sample_location_specify | Specific name of sampling location (*see "sample_location"*) |
+| method | Type of location where sample is taken with regard to flow (*e.g.*, influent or upstream) |
 | capacity_mgd | Maximum allowed flow in millions of gallons per day (MGD) |
 | population_served | Estimated number of persons connected to the sampling point |
 | institution_type | Clarification of health, academic, or other institutional specific connection to the sewershed |
@@ -31,8 +45,6 @@ This file contains metadata of all municipal sewersheds within NYS. Information 
 | wwtp_longitude | Longitude of the facility in degrees |
 
 ### sars2-concentration.csv
-
-This file contains the measurements of raw abundance from wastewater samples, as well as sample metadata, including collection method and extraction method. Within the dataset, each row consists of the results from a single sampling event and necessary information to perform spatial and/or temporal analyses.
 
 | Variable name | Description |
 | --- | --- |
@@ -57,9 +69,6 @@ This file contains the measurements of raw abundance from wastewater samples, as
 | withheld | NA |
 
 ### sars2-genetic-sequencing.csv
-
-The relative abundance of variants detected by the Freyja algorithm in each sample is uploaded to a data file. Each line contains information about where the sample was collected and the collection date. The sample ID field can be cross referenced to other data files for sewershed and sample metadata.
-
 | Variable name | Description |
 | --- | --- |
 | sample_id | Unique ID comprised of date and sewershed of collection |
